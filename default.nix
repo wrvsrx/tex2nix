@@ -9,8 +9,8 @@ python3.pkgs.buildPythonApplication rec {
 
   src = pkgsSrc;
 
-  buildInputs = [ makeWrapper ];
-  checkInputs = [
+  nativeBuildInputs = [ makeWrapper ];
+  nativeCheckInputs = [
     python3.pkgs.black
     python3.pkgs.flake8
     glibcLocales
